@@ -1,0 +1,11 @@
+.env
+.env.enc
+.env.vault
+vault/
+certs/*.key
+certs/*.srl
+*.db
+*.log
+__pycache__/
+*.png
+mqtt

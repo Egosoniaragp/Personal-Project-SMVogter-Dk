@@ -1,0 +1,14 @@
+<h1>SMVogter DK v3.7 ULTIMATE - $0 Secure Linux Sandbox</h1>
+<h2>Meet Sonia — Café in Nørrebro — Fake QR + Phishing victim</h2>
+<p><b>Problem:</b> Fake QR stickers on BORD-3, MitID phishing, CEO fraud. G4S = 1500kr/mo too expensive.</p>
+<p><b>Solution:</b> $0 guardian — HMAC QR verification, 7 attacks blocked, bilingual DA/EN, MobilePay REF BORD-3 reconcilable, GDPR hash-chain audit.</p>
+<table border=1><tr><th>v3.6 flaw</th><th>v3.7 $0 fix</th></tr>
+<tr><td>.env plaintext</td><td>.env.enc AES-256-CBC + master.key 600 vault pattern</td></tr>
+<tr><td>nonce/rate in RAM</td><td>SQLite smvogter.db persistent - replay survives reboot</td></tr>
+<tr><td>self-signed no trust</td><td>CA + server.crt 90d + TLS 8883 persistence true</td></tr>
+<tr><td>AI no eval</td><td>train_test_split 75/25 + precision/recall + explainability</td></tr>
+<tr><td>MyShop stub</td><td>Bearer + x-myshop-signature HMAC + REF BORD-3 log</td></tr>
+<tr><td>audit plain file</td><td>SQLite hash chain prev_hash->hash tamper-evident Art12</td></tr>
+</table>
+<p>7 Attacks: DK-001 MitID BLOKERET/BLOCKED, DK-002 CEO, DK-003 Faktura, DK-004 Ransomware, DK-005 QR FALSK QR BORD 3 BLOKERET, DK-006 CPR, DK-007 DDoS</p>
+<p>Demo: python3 detect.py => 0.86/1.00 + OK + Replay beskyttet | python3 run_test.py => 7 BLOKERET | sqlite3 smvogter.db SELECT * FROM audit</p>
